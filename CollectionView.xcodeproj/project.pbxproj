@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F4713ED823F3CBCB008908EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713ED723F3CBCB008908EF /* AppDelegate.swift */; };
-		F4713EDA23F3CBCB008908EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713ED923F3CBCB008908EF /* SceneDelegate.swift */; };
-		F4713EDC23F3CBCB008908EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EDB23F3CBCB008908EF /* ViewController.swift */; };
-		F4713EDF23F3CBCB008908EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4713EDD23F3CBCB008908EF /* Main.storyboard */; };
+		F4713EDC23F3CBCB008908EF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EDB23F3CBCB008908EF /* CollectionViewController.swift */; };
 		F4713EE123F3CBCD008908EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4713EE023F3CBCD008908EF /* Assets.xcassets */; };
 		F4713EE423F3CBCD008908EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4713EE223F3CBCD008908EF /* LaunchScreen.storyboard */; };
+		F4713EEC23F3D142008908EF /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EEB23F3D142008908EF /* CollectionViewHeader.swift */; };
+		F4713EEE23F3D164008908EF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EED23F3D164008908EF /* CollectionViewCell.swift */; };
+		F4713EF023F3D589008908EF /* GroupedSeciton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EEF23F3D589008908EF /* GroupedSeciton.swift */; };
+		F4713EF323F3D5BB008908EF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EF223F3D5BB008908EF /* Row.swift */; };
+		F4713EF523F3D5C2008908EF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EF423F3D5C2008908EF /* Section.swift */; };
+		F4713EF823F3F8C5008908EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4713EF723F3F8C5008908EF /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4713ED423F3CBCB008908EF /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4713ED723F3CBCB008908EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4713ED923F3CBCB008908EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4713EDB23F3CBCB008908EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4713EDE23F3CBCB008908EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4713EDB23F3CBCB008908EF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		F4713EE023F3CBCD008908EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4713EE323F3CBCD008908EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4713EE523F3CBCD008908EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4713EEB23F3D142008908EF /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		F4713EED23F3D164008908EF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F4713EEF23F3D589008908EF /* GroupedSeciton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedSeciton.swift; sourceTree = "<group>"; };
+		F4713EF223F3D5BB008908EF /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		F4713EF423F3D5C2008908EF /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4713EF823F3F8C5008908EF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,34 @@
 		F4713ED623F3CBCB008908EF /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F4713EF923F40B34008908EF /* Protocols */,
+				F4713EF123F3D5AD008908EF /* Model */,
 				F4713ED723F3CBCB008908EF /* AppDelegate.swift */,
-				F4713ED923F3CBCB008908EF /* SceneDelegate.swift */,
-				F4713EDB23F3CBCB008908EF /* ViewController.swift */,
-				F4713EDD23F3CBCB008908EF /* Main.storyboard */,
+				F4713EDB23F3CBCB008908EF /* CollectionViewController.swift */,
 				F4713EE023F3CBCD008908EF /* Assets.xcassets */,
 				F4713EE223F3CBCD008908EF /* LaunchScreen.storyboard */,
 				F4713EE523F3CBCD008908EF /* Info.plist */,
+				F4713EEB23F3D142008908EF /* CollectionViewHeader.swift */,
+				F4713EED23F3D164008908EF /* CollectionViewCell.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F4713EF123F3D5AD008908EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4713EEF23F3D589008908EF /* GroupedSeciton.swift */,
+				F4713EF223F3D5BB008908EF /* Row.swift */,
+				F4713EF423F3D5C2008908EF /* Section.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4713EF923F40B34008908EF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = CollectionView;
+			packageProductDependencies = (
+				F4713EF723F3F8C5008908EF /* SnapKit */,
+			);
 			productName = CollectionView;
 			productReference = F4713ED423F3CBCB008908EF /* CollectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = F4713ECB23F3CBCB008908EF;
+			packageReferences = (
+				F4713EF623F3F8C5008908EF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F4713ED523F3CBCB008908EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +160,6 @@
 			files = (
 				F4713EE423F3CBCD008908EF /* LaunchScreen.storyboard in Resources */,
 				F4713EE123F3CBCD008908EF /* Assets.xcassets in Resources */,
-				F4713EDF23F3CBCB008908EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4713EDC23F3CBCB008908EF /* ViewController.swift in Sources */,
+				F4713EEE23F3D164008908EF /* CollectionViewCell.swift in Sources */,
+				F4713EDC23F3CBCB008908EF /* CollectionViewController.swift in Sources */,
+				F4713EF023F3D589008908EF /* GroupedSeciton.swift in Sources */,
+				F4713EEC23F3D142008908EF /* CollectionViewHeader.swift in Sources */,
 				F4713ED823F3CBCB008908EF /* AppDelegate.swift in Sources */,
-				F4713EDA23F3CBCB008908EF /* SceneDelegate.swift in Sources */,
+				F4713EF523F3D5C2008908EF /* Section.swift in Sources */,
+				F4713EF323F3D5BB008908EF /* Row.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4713EDD23F3CBCB008908EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4713EDE23F3CBCB008908EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4713EE223F3CBCD008908EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4713EF623F3F8C5008908EF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4713EF723F3F8C5008908EF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4713EF623F3F8C5008908EF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4713ECC23F3CBCB008908EF /* Project object */;
 }
