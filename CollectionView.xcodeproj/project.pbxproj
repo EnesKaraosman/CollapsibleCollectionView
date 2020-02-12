@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,6 @@
 		F4713EF023F3D589008908EF /* GroupedSeciton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EEF23F3D589008908EF /* GroupedSeciton.swift */; };
 		F4713EF323F3D5BB008908EF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EF223F3D5BB008908EF /* Row.swift */; };
 		F4713EF523F3D5C2008908EF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EF423F3D5C2008908EF /* Section.swift */; };
-		F4713EF823F3F8C5008908EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4713EF723F3F8C5008908EF /* SnapKit */; };
 		F4713EFB23F42265008908EF /* collapsible-demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = F4713EFA23F42265008908EF /* collapsible-demo.gif */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4713EF823F3F8C5008908EF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +112,6 @@
 			);
 			name = CollectionView;
 			packageProductDependencies = (
-				F4713EF723F3F8C5008908EF /* SnapKit */,
 			);
 			productName = CollectionView;
 			productReference = F4713ED423F3CBCB008908EF /* CollectionView.app */;
@@ -145,7 +142,6 @@
 			);
 			mainGroup = F4713ECB23F3CBCB008908EF;
 			packageReferences = (
-				F4713EF623F3F8C5008908EF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F4713ED523F3CBCB008908EF /* Products */;
 			projectDirPath = "";
@@ -368,25 +364,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F4713EF623F3F8C5008908EF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F4713EF723F3F8C5008908EF /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4713EF623F3F8C5008908EF /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4713ECC23F3CBCB008908EF /* Project object */;
 }
