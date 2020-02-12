@@ -12,10 +12,6 @@ protocol CollapsibleSection where Self: Section {
     var isCollapsed: Bool { get set }
 }
 
-protocol CollapsibleRow where Self: Row {
-    var isCollapsed: Bool { get set }
-}
-
 protocol TrackableSectionHeader: class {
     var delegate: SectionTapped? { get }
     var indexPath: IndexPath? { get set }
@@ -35,7 +31,6 @@ extension SectionTapped where Self: CollapsibleCollectionView {
         self.collectionView.reloadSections(IndexSet(integer: indexPath.section))
     }
 }
-
 
 class CollectionViewController: UICollectionViewController, CollapsibleCollectionView {
 

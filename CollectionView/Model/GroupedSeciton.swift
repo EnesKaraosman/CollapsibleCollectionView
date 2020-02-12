@@ -8,18 +8,18 @@
 
 import Foundation
 
-class GroupedSection<S: CollapsibleSection, R: CollapsibleRow> {
-    var section: S
-    var rows: [R]
+class GroupedSection<S: CollapsibleSection, _Row> {
     
-    init (section: S, rows: [R]) {
+    var section: S
+    var rows: [_Row]
+    
+    init (section: S, rows: [_Row]) {
         self.section = section
         self.rows = rows
     }
     
     func toggleCollapse() {
         self.section.isCollapsed.toggle()
-        self.rows.forEach { $0.isCollapsed.toggle() }
     }
     
 }

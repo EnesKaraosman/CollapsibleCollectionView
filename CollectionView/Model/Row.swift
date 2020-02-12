@@ -8,9 +8,8 @@
 
 import Foundation
 
-class Row: CollapsibleRow {
+class Row {
     var name: String = ""
-    var isCollapsed: Bool = false
     
     init(name: String) {
         self.name = name
