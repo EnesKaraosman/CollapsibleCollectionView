@@ -1,6 +1,6 @@
 # CollapsibleCollectionView
 
-TLDR;
+**TLDR;**
 Clone project & enjoy.
 
 Let's use!
@@ -41,6 +41,8 @@ class CollectionViewController: UICollectionViewController, CollapsibleCollectio
       CollectionViewHeader.indexPath & CollectionViewHeader.delegate
     */
 }
+
+extension CollectionViewController: SectionTapped { } // Default impl. exist, you may override
 
 class CollectionViewHeader: UICollectionReusableView, TrackableSectionHeader {
     weak var delegate: SectionTapped?
