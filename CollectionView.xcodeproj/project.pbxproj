@@ -17,6 +17,7 @@
 		F4713EF323F3D5BB008908EF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EF223F3D5BB008908EF /* Row.swift */; };
 		F4713EF523F3D5C2008908EF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EF423F3D5C2008908EF /* Section.swift */; };
 		F4713EFD23F425B1008908EF /* collapsible-demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = F4713EFC23F425B1008908EF /* collapsible-demo.gif */; };
+		F4713EFF23F42659008908EF /* Required.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4713EFE23F42659008908EF /* Required.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F4713EF223F3D5BB008908EF /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		F4713EF423F3D5C2008908EF /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		F4713EFC23F425B1008908EF /* collapsible-demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "collapsible-demo.gif"; sourceTree = "<group>"; };
+		F4713EFE23F42659008908EF /* Required.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Required.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		F4713EF923F40B34008908EF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F4713EFE23F42659008908EF /* Required.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				F4713EEE23F3D164008908EF /* CollectionViewCell.swift in Sources */,
 				F4713EDC23F3CBCB008908EF /* CollectionViewController.swift in Sources */,
+				F4713EFF23F42659008908EF /* Required.swift in Sources */,
 				F4713EF023F3D589008908EF /* GroupedSeciton.swift in Sources */,
 				F4713EEC23F3D142008908EF /* CollectionViewHeader.swift in Sources */,
 				F4713ED823F3CBCB008908EF /* AppDelegate.swift in Sources */,

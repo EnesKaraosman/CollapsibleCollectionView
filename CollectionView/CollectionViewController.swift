@@ -8,30 +8,6 @@
 
 import UIKit
 
-protocol CollapsibleSection where Self: Section {
-    var isCollapsed: Bool { get set }
-}
-
-protocol TrackableSectionHeader: class {
-    var delegate: SectionTapped? { get }
-    var indexPath: IndexPath? { get set }
-}
-
-protocol CollapsibleCollectionView where Self: UICollectionViewController {
-    var items: [GroupedSection<Section, Row>] { get set }
-}
-
-protocol SectionTapped where Self: CollapsibleCollectionView {
-    func sectionTapped(indexPath: IndexPath)
-}
-
-extension SectionTapped where Self: CollapsibleCollectionView {
-    func sectionTapped(indexPath: IndexPath) {
-        self.items[indexPath.section].toggleCollapse()
-        self.collectionView.reloadSections(IndexSet(integer: indexPath.section))
-    }
-}
-
 class CollectionViewController: UICollectionViewController, CollapsibleCollectionView {
 
     var items: [GroupedSection<Section, Row>] = []
